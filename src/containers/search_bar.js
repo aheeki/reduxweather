@@ -15,9 +15,14 @@ export default class SearchBar extends Component {
 
   }
 
+  onFormSubmit(event) {
+    // prevents form submission by clicking submit or enter
+    event.preventDefault();
+  }
+
   render() {
     return (
-      <form className="input-group">
+      <form onSubmit={this.onFormSubmit} className="input-group">
         <input
           placeholder="Get a 5-day forecast in your favorite cities"
           className="form-control"
