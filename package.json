@@ -8,7 +8,7 @@
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "dev": "webpack-dev-server --config webpack.config.dev.js --watch --progress --colors --hot --inline -d --host 0.0.0.0 --port 80",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --watch --progress --colors --hot --inline -d --host 0.0.0.0 --port 80 --content-base ./",
     "local": "webpack-dev-server --watch --progress --colors --hot --inline --no-info -d" 
   },
   "author": "",
