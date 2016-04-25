@@ -1,2 +1,7 @@
-# onbuild below triggers npm install and npm start
-FROM node:4.4.3-onbuild
+FROM octohost/nginx:1.8
+
+COPY ./public /srv/www
+
+EXPOSE 80
+
+CMD nginx
