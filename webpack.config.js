@@ -30,7 +30,9 @@ module.exports = {
   },
   plugins: [
     commonsPlugin,
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': "development" })
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"development"'
+    })
   ],
   resolve: {
     extensions: ['', '.js', '.json', '.less']
