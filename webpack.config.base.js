@@ -4,7 +4,7 @@ var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 
 var config = {
   entry: {
-    entry: './src/index.js',
+    entry: './src/index.js'
   },
   output: {
     path: __dirname,
@@ -15,7 +15,7 @@ var config = {
     loaders: [
       {
         test: /\.jsx?$/,
-        include: [ path.resolve(__dirname, "client") ],
+        include: [ path.resolve(__dirname, "src") ],
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {

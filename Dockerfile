@@ -1,6 +1,6 @@
 FROM octohost/nginx:1.8
 
-COPY ./public /srv/www
+COPY ./ /srv/www
 
 EXPOSE 80
 
