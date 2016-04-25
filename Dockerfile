@@ -4,6 +4,7 @@
 
 FROM node:latest
 WORKDIR /usr/src/app
+COPY package.json /usr/src/app/
 RUN npm install webpack webpack-dev-server surge -g
 VOLUME ["/usr/src/app"]
 ENTRYPOINT npm install && npm dev
